@@ -4,14 +4,14 @@
 
 ---
 
-## Step 1. 환경 구축 및 도커 엔진 초기화 (PDF 2~4쪽)
+## Step 1. 도커 엔진 설치
 가장 먼저 Ubuntu 24.04 환경에 도커를 설치하고 권한을 설정합니다.
 ```bash
 # 1. 패키지 인덱스 업데이트 및 필수 패키지 설치
 sudo apt-get update
 sudo apt-get install -y ca-certificates curl gnupg
 
-# 2. 기존 구버전 도커 패키지 제거
+# 2. 기존 구버전 도커 패키지 제거 (기존에 도커가 설치되어 있었다면 꼭 제거할 것)
 sudo apt-get remove -y docker docker-engine docker.io containerd runc || true
 
 # 3. Docker 공식 GPG 키 등록 및 저장소 추가
