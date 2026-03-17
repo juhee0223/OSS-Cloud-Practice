@@ -125,6 +125,7 @@ docker push myrepo/nginx:v1
 ```bash
 # 7. 이미지 레이어 구조 및 히스토리 분석
 docker history nginx:1.21
+```
 <img width="1000" height="323" alt="image" src="https://github.com/user-attachments/assets/168add22-7d0f-48ff-a905-ce0425a3df52" />
 
 ```
@@ -181,6 +182,7 @@ docker exec env-file-test env | grep API_KEY
 <img width="1004" height="360" alt="image" src="https://github.com/user-attachments/assets/9d17c1ec-ed16-4296-a798-3593c3ddeee8" />
 
 
+# 26-03-17 실습 여기까지 다시 해봤음
 ## Step 4. 상태 모니터링 및 컨테이너 내부 제어 (PDF 9~11, 15~17쪽)
 실행 중인 컨테이너의 상태를 점검하고 내부로 진입하여 작업을 수행합니다.
 ```bash
@@ -241,6 +243,7 @@ docker attach web
 | :--- | :--- |
 | `-it` | 대화형(Interactive) 터미널 환경을 할당하여 내부에 접속합니다. |
 
+
 ## Step 5. 라이프사이클 제어 (PDF 11~12쪽)
 
 구동 중인 컨테이너의 상태를 변경합니다.
@@ -264,6 +267,7 @@ docker restart -t 30 web
 | 옵션 | 설명 |
 | :--- | :--- |
 | `-t` | 종료 대기 시간(초)을 설정합니다 (기본 10초). |
+
 
 ## Step 6. 데이터 백업 및 마이그레이션 (PDF 24~25쪽)
 
